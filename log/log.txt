@@ -44,3 +44,35 @@ checking for updates, current version = 1.0.0
 checking for updates, current version = 1.0.0
 -----Session started at 2024-06-20 08:44:13.603155-----
 on login page!
+-----Session started at 2024-06-20 10:08:34.985698-----
+on login page!
+checking for updates, current version = 1.0.0
+-----Session started at 2024-06-20 10:08:55.610305-----
+on login page!
+checking for updates, current version = 1.0.0
+-----Session started at 2024-06-20 10:18:32.397121-----
+on login page!
+-----Session started at 2024-06-20 10:19:07.783080-----
+on login page!
+-----Session started at 2024-06-20 10:19:44.332144-----
+on login page!
+-----Session started at 2024-06-20 10:20:14.108978-----
+on login page!
+-----Session started at 2024-06-20 10:27:44.270894-----
+on login page!
+Requesting information from {ws.github_api_link}
+-----Session started at 2024-06-20 10:28:30.608687-----
+on login page!
+Requesting information from https://api.github.com/repos/{wlm.github_repo_owner}/{wlm.github_repo_name}/releases/latest
+-----Session started at 2024-06-20 10:29:35.766215-----
+on login page!
+Requesting information from https://api.github.com/repos/BasHeemskerk/WINBLOX/releases/latest
+-----Session started at 2024-06-20 10:30:46.307066-----
+on login page!
+Requesting information from https://api.github.com/repos/BasHeemskerk/WINBLOX/releases/latest
+{'message': 'Not Found', 'documentation_url': 'https://docs.github.com/rest/releases/releases#get-the-latest-release', 'status': '404'}
+-----Session started at 2024-06-20 10:31:11.446650-----
+on login page!
+Requesting information from https://api.github.com/repos/BasHeemskerk/WINBLOX/releases/latest
+{'message': 'Not Found', 'documentation_url': 'https://docs.github.com/rest/releases/releases#get-the-latest-release', 'status': '404'}
+checking for updates, current version = 1.0.0

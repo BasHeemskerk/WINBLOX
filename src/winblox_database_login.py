@@ -53,6 +53,8 @@ def login_window():
             wlm.webbrowser.open(ws.source)
         if (event == "Check for updates"):
             check_updates(ws.version)
+            window["-SEARCH_UPDATES-"].update("Checking for updates...")
+            new_ver = check_updates(ws.version)
         if event == "Close" or event == wlm.sg.WIN_CLOSED:
             break
     
@@ -68,4 +70,13 @@ def login_database(username, password, mfa_code, link):
     wds.debug(link)
 
 def check_updates(current_version):
+    response = wlm.requests.get(ws.github_api_link)
+    wds.debug("Requesting information from " + ws.github_api_link)
+    wds.debug(str(response.json()))
+    wds.debug(str(response.json()["name"]))
     wds.debug("checking for updates, current version = " + current_version)
+
+    if (ws.version == str(response.json()["name"])):
+        return False
+    else:
+        return True
