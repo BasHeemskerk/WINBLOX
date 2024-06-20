@@ -8,7 +8,7 @@ wlm.sg.theme("DarkBlue")
 settings = [
     [wlm.sg.Button("Check for updates"), wlm.sg.Text("", key=("-SEARCH_UPDATES-"))],
     [wlm.sg.HSeparator()],
-    [wlm.sg.Button("Source Code"), wlm.sg.Button("Documentation")],
+    [wlm.sg.Button("Source Code"), wlm.sg.Button("Documentation"), wlm.sg.Button("Log file")],
 ]
 
 login_form = [
@@ -36,6 +36,8 @@ complete_layout = [
     [wlm.sg.Column(logo)],
 ]
 
+version_from_check = ""
+
 def login_window():
 
     window = wlm.sg.Window("WINBLOX | " + ws.version, complete_layout)
@@ -55,6 +57,10 @@ def login_window():
             check_updates(ws.version)
             window["-SEARCH_UPDATES-"].update("Checking for updates...")
             new_ver = check_updates(ws.version)
+            if new_ver == False:
+                window["-SEARCH_UPDATES-"].update("No updates available.")
+            else:
+                window["-SEARCH_UPDATES-"].update("There is an update available.")
         if event == "Close" or event == wlm.sg.WIN_CLOSED:
             break
     
@@ -70,13 +76,21 @@ def login_database(username, password, mfa_code, link):
     wds.debug(link)
 
 def check_updates(current_version):
-    response = wlm.requests.get(ws.github_api_link)
-    wds.debug("Requesting information from " + ws.github_api_link)
-    wds.debug(str(response.json()))
-    wds.debug(str(response.json()["name"]))
+
     wds.debug("checking for updates, current version = " + current_version)
 
-    if (ws.version == str(response.json()["name"])):
-        return False
-    else:
-        return True
+    response = wlm.requests.get(ws.github_api_link)
+
+    wds.debug("Requesting information from " + ws.github_api_link)
+    wds.debug(str(response.json()))
+
+    resp = response.json()
+
+    for releases in resp:
+        wds.debug(releases["tag_name"])
+        version_from_check = releases["tag_name"]
+        if (ws.version == releases["tag_name"]):
+            return False
+        else:
+            return True
+        break

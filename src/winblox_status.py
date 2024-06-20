@@ -1,6 +1,6 @@
 login_page = True
 
-version = "1.0.0"
+version = "0.0.1"
 Developer = "Bas Heemskerk"
 
 source = "https://github.com/BasHeemskerk/WINBLOX"
@@ -12,4 +12,4 @@ encrypt_key = "_w1nbl0x-"
 github_repo_owner = "BasHeemskerk"
 github_repo_name = "WINBLOX"
 
-github_api_link = "https://api.github.com/repos/" + github_repo_owner + "/" + github_repo_name + "/releases/latest"
+github_api_link = "https://api.github.com/repos/" + github_repo_owner + "/" + github_repo_name + "/releases#get_the_latest_release"
