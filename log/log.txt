@@ -1,0 +1,46 @@
+-----Session started at 2024-06-20 08:29:54.310055-----
+on login page!
+
+
+MFA is not enabled
+http://winblox.atwebpages.com/
+-----Session started at 2024-06-20 08:31:10.738519-----
+on login page!
+-----Session started at 2024-06-20 08:31:24.221664-----
+on login page!
+-----Session started at 2024-06-20 08:32:40.271685-----
+on login page!
+-----Session started at 2024-06-20 08:33:28.105299-----
+on login page!
+
+
+MFA is not enabled
+http://winblox.atwebpages.com/
+
+
+MFA is not enabled
+http://winblox.atwebpages.com/
+
+
+MFA is not enabled
+http://winblox.atwebpages.com/
+
+
+MFA is not enabled
+http://winblox.atwebpages.com/
+
+
+MFA is not enabled
+http://winblox.atwebpages.com/
+-----Session started at 2024-06-20 08:39:11.554937-----
+on login page!
+-----Session started at 2024-06-20 08:42:37.956989-----
+on login page!
+checking for updates, current version = 1.0.0
+checking for updates, current version = 1.0.0
+checking for updates, current version = 1.0.0
+checking for updates, current version = 1.0.0
+checking for updates, current version = 1.0.0
+checking for updates, current version = 1.0.0
+-----Session started at 2024-06-20 08:44:13.603155-----
+on login page!
