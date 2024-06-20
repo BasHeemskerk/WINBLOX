@@ -46,3 +46,9 @@ def open_folder(location, mode):
 def create_folder(target_location, mode):
 
     final_path = target_location
+
+
+def file_saver_window(filename_input, folder_location_input):
+    print(folder_location_input)
+    print(filename_input)
+    

@@ -14,10 +14,8 @@ settings = [
 login_form = [
     [wlm.sg.Text("Welcome to winblox, the most advanced IDE for mikrotik programming")],
     [wlm.sg.HSeparator()],
-    [wlm.sg.Text("Username:")],
-    [wlm.sg.Input("", key=("-USERNAME-"))],
-    [wlm.sg.Text("Password:")],
-    [wlm.sg.Input("", key=("-PASSWORD-"))],
+    [wlm.sg.Text("Username:"), wlm.sg.Input("", key=("-USERNAME-"))],
+    [wlm.sg.Text("Password:"), wlm.sg.Input("", key=("-PASSWORD-"))],
     [wlm.sg.Button("Database login"), wlm.sg.Button("Request account")],
     [wlm.sg.Button("Guestmode")],
     [wlm.sg.HSeparator()],

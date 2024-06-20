@@ -1,14 +1,37 @@
------Session started at 2024-06-20 15:15:24.357525-----
-on login page!
-checking for updates, current version = 0.0.1
-Requesting information from https://api.github.com/repos/BasHeemskerk/WINBLOX/releases#get_the_latest_release
-[{'url': 'https://api.github.com/repos/BasHeemskerk/WINBLOX/releases/161427548', 'assets_url': 'https://api.github.com/repos/BasHeemskerk/WINBLOX/releases/161427548/assets', 'upload_url': 'https://uploads.github.com/repos/BasHeemskerk/WINBLOX/releases/161427548/assets{?name,label}', 'html_url': 'https://github.com/BasHeemskerk/WINBLOX/releases/tag/0.0.1', 'id': 161427548, 'author': {'login': 'BasHeemskerk', 'id': 54497123, 'node_id': 'MDQ6VXNlcjU0NDk3MTIz', 'avatar_url': 'https://avatars.githubusercontent.com/u/54497123?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/BasHeemskerk', 'html_url': 'https://github.com/BasHeemskerk', 'followers_url': 'https://api.github.com/users/BasHeemskerk/followers', 'following_url': 'https://api.github.com/users/BasHeemskerk/following{/other_user}', 'gists_url': 'https://api.github.com/users/BasHeemskerk/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/BasHeemskerk/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/BasHeemskerk/subscriptions', 'organizations_url': 'https://api.github.com/users/BasHeemskerk/orgs', 'repos_url': 'https://api.github.com/users/BasHeemskerk/repos', 'events_url': 'https://api.github.com/users/BasHeemskerk/events{/privacy}', 'received_events_url': 'https://api.github.com/users/BasHeemskerk/received_events', 'type': 'User', 'site_admin': False}, 'node_id': 'RE_kwDOMLb2iM4JnzBc', 'tag_name': '0.0.1', 'target_commitish': 'master', 'name': '', 'draft': False, 'prerelease': True, 'created_at': '2024-06-20T08:39:00Z', 'published_at': '2024-06-20T08:41:27Z', 'assets': [{'url': 'https://api.github.com/repos/BasHeemskerk/WINBLOX/releases/assets/174874080', 'id': 174874080, 'node_id': 'RA_kwDOMLb2iM4KbF3g', 'name': 'test.txt', 'label': None, 'uploader': {'login': 'BasHeemskerk', 'id': 54497123, 'node_id': 'MDQ6VXNlcjU0NDk3MTIz', 'avatar_url': 'https://avatars.githubusercontent.com/u/54497123?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/BasHeemskerk', 'html_url': 'https://github.com/BasHeemskerk', 'followers_url': 'https://api.github.com/users/BasHeemskerk/followers', 'following_url': 'https://api.github.com/users/BasHeemskerk/following{/other_user}', 'gists_url': 'https://api.github.com/users/BasHeemskerk/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/BasHeemskerk/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/BasHeemskerk/subscriptions', 'organizations_url': 'https://api.github.com/users/BasHeemskerk/orgs', 'repos_url': 'https://api.github.com/users/BasHeemskerk/repos', 'events_url': 'https://api.github.com/users/BasHeemskerk/events{/privacy}', 'received_events_url': 'https://api.github.com/users/BasHeemskerk/received_events', 'type': 'User', 'site_admin': False}, 'content_type': 'text/plain', 'state': 'uploaded', 'size': 13, 'download_count': 0, 'created_at': '2024-06-20T08:41:23Z', 'updated_at': '2024-06-20T08:41:24Z', 'browser_download_url': 'https://github.com/BasHeemskerk/WINBLOX/releases/download/0.0.1/test.txt'}], 'tarball_url': 'https://api.github.com/repos/BasHeemskerk/WINBLOX/tarball/0.0.1', 'zipball_url': 'https://api.github.com/repos/BasHeemskerk/WINBLOX/zipball/0.0.1', 'body': 'test for update checks'}]
-0.0.1
-checking for updates, current version = 0.0.1
-Requesting information from https://api.github.com/repos/BasHeemskerk/WINBLOX/releases#get_the_latest_release
-[{'url': 'https://api.github.com/repos/BasHeemskerk/WINBLOX/releases/161427548', 'assets_url': 'https://api.github.com/repos/BasHeemskerk/WINBLOX/releases/161427548/assets', 'upload_url': 'https://uploads.github.com/repos/BasHeemskerk/WINBLOX/releases/161427548/assets{?name,label}', 'html_url': 'https://github.com/BasHeemskerk/WINBLOX/releases/tag/0.0.1', 'id': 161427548, 'author': {'login': 'BasHeemskerk', 'id': 54497123, 'node_id': 'MDQ6VXNlcjU0NDk3MTIz', 'avatar_url': 'https://avatars.githubusercontent.com/u/54497123?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/BasHeemskerk', 'html_url': 'https://github.com/BasHeemskerk', 'followers_url': 'https://api.github.com/users/BasHeemskerk/followers', 'following_url': 'https://api.github.com/users/BasHeemskerk/following{/other_user}', 'gists_url': 'https://api.github.com/users/BasHeemskerk/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/BasHeemskerk/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/BasHeemskerk/subscriptions', 'organizations_url': 'https://api.github.com/users/BasHeemskerk/orgs', 'repos_url': 'https://api.github.com/users/BasHeemskerk/repos', 'events_url': 'https://api.github.com/users/BasHeemskerk/events{/privacy}', 'received_events_url': 'https://api.github.com/users/BasHeemskerk/received_events', 'type': 'User', 'site_admin': False}, 'node_id': 'RE_kwDOMLb2iM4JnzBc', 'tag_name': '0.0.1', 'target_commitish': 'master', 'name': '', 'draft': False, 'prerelease': True, 'created_at': '2024-06-20T08:39:00Z', 'published_at': '2024-06-20T08:41:27Z', 'assets': [{'url': 'https://api.github.com/repos/BasHeemskerk/WINBLOX/releases/assets/174874080', 'id': 174874080, 'node_id': 'RA_kwDOMLb2iM4KbF3g', 'name': 'test.txt', 'label': None, 'uploader': {'login': 'BasHeemskerk', 'id': 54497123, 'node_id': 'MDQ6VXNlcjU0NDk3MTIz', 'avatar_url': 'https://avatars.githubusercontent.com/u/54497123?v=4', 'gravatar_id': '', 'url': 'https://api.github.com/users/BasHeemskerk', 'html_url': 'https://github.com/BasHeemskerk', 'followers_url': 'https://api.github.com/users/BasHeemskerk/followers', 'following_url': 'https://api.github.com/users/BasHeemskerk/following{/other_user}', 'gists_url': 'https://api.github.com/users/BasHeemskerk/gists{/gist_id}', 'starred_url': 'https://api.github.com/users/BasHeemskerk/starred{/owner}{/repo}', 'subscriptions_url': 'https://api.github.com/users/BasHeemskerk/subscriptions', 'organizations_url': 'https://api.github.com/users/BasHeemskerk/orgs', 'repos_url': 'https://api.github.com/users/BasHeemskerk/repos', 'events_url': 'https://api.github.com/users/BasHeemskerk/events{/privacy}', 'received_events_url': 'https://api.github.com/users/BasHeemskerk/received_events', 'type': 'User', 'site_admin': False}, 'content_type': 'text/plain', 'state': 'uploaded', 'size': 13, 'download_count': 0, 'created_at': '2024-06-20T08:41:23Z', 'updated_at': '2024-06-20T08:41:24Z', 'browser_download_url': 'https://github.com/BasHeemskerk/WINBLOX/releases/download/0.0.1/test.txt'}], 'tarball_url': 'https://api.github.com/repos/BasHeemskerk/WINBLOX/tarball/0.0.1', 'zipball_url': 'https://api.github.com/repos/BasHeemskerk/WINBLOX/zipball/0.0.1', 'body': 'test for update checks'}]
-0.0.1
-
-
-MFA is not enabled
-http://winblox.atwebpages.com/
+on command page!
+on command page!
+on command page!
+on command page!
+on command page!
+on command page!
+on command page!
+on command page!
+on command page!
+on command page!
+on main menu page!
+on command page!
+on main menu page!
+on command page!
+on main menu page!
+on command page!
+on main menu page!
+on command page!
+on main menu page!
+on command page!
+on main menu page!
+on command page!
+on main menu page!
+on command page!
+on main menu page!
+on command page!
+on main menu page!
+on command page!
+on main menu page!
+on command page!
+on main menu page!
+on command page!
+on main menu page!
+on command page!
+on main menu page!
+on command page!
+on main menu page!
