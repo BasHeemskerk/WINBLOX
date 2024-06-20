@@ -2,14 +2,15 @@ from src import winblox_debug_system as wds
 from src import winblox_error_codes as wes
 from src import winblox_ssh_api as wsa
 from src import winblox_local_modules as wlm
-from src import  winblox_status as ws
+from src import winblox_status as ws
+from src import winblox_syntaxing as wsy
 
 head = [
     [wlm.sg.Text("WINBLOX Terminal")]
 ]
 
 command_line = [
-    [wlm.sg.Text("Admin@MikroTik >", key=("-USER-")), wlm.sg.Input("", key=("-COMMAND-")), wlm.sg.Button("Execute")],
+    [wlm.sg.Text("Admin@MikroTik >", key=("-USER-")), wlm.sg.Input("", enable_events=True, key=("-COMMAND-")), wlm.sg.Button("Execute")],
 ]
 
 foot = [
@@ -31,6 +32,8 @@ def commandline_window():
         event, values = window.read()
         if event == "Execute":
             wsa.send_package(str(values["-COMMAND-"]))
+            if event == '-COMMAND-' and wlm.keyboard.is_pressed("space"):
+                wsy.split_string(str(values["-COMMAND-"]))
         if event == "Return" or event == wlm.sg.WIN_CLOSED:
             ws.main_menu = True
             ws.command_page = False

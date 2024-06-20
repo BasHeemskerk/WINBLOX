@@ -32,19 +32,19 @@ data_types = [
 ]
 
 esc_sequences = [
-    "\"",
-    "\\",
-    "\n",
-    "\r",
-    "\t",
-    "\$",
-    "\?",
-    "\_",
-    "\a",
-    "\b",
-    "\f",
-    "\v",
-    "\xx"
+    #"\"",
+    #"\\",
+    #"\n",
+    #"\r",
+    #"\t",
+    #"\$",
+    #"\?",
+    #"\_",
+    #"\a",
+    #"\b",
+    #"\f",
+    #"\v",
+    #"\xx"
 ]
 
 arithmetic_operators = [
@@ -60,7 +60,7 @@ relational_operators = [
     "<",
     ">",
     "<=",
-    ">=".
+    ">=",
     "!="
 ]
 
@@ -122,17 +122,24 @@ def set_highligts(scr_input):
         if letter in delimiters:
             new_color = c_delimiters
         if letter in data_types:
-            new color = c_data_types
+            new_color = c_data_types
         if letter in esc_sequences:
-            new color = c_esc_sequence
+            new_color = c_esc_sequence
         if letter in arithmetic_operators or relational_operators or logical_operators or bitwise_operators or concatenation_operators or other_operators:
-            new color = c_operators
+            new_color = c_operators
     for words in scr_input:
         if words in prefix:
             new_color = c_prefix
         if words in c_variables:
-            new_color - c_variables
+            new_color = c_variables
     
     print(new_color)
 
     return new_color
+
+def split_string(scr_input):
+    words_to_check = scr_input.split()
+
+    for wtc in words_to_check:
+        print (wtc)
+        set_highligts(wtc)
