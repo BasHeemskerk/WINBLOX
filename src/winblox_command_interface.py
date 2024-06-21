@@ -32,8 +32,8 @@ def commandline_window():
         event, values = window.read()
         if event == "Execute":
             wsa.send_package(str(values["-COMMAND-"]))
-            if event == '-COMMAND-' and wlm.keyboard.is_pressed("space"):
-                wsy.split_string(str(values["-COMMAND-"]))
+        if event == '-COMMAND-':
+            wsy.set_highligts(str(values["-COMMAND-"]))
         if event == "Return" or event == wlm.sg.WIN_CLOSED:
             ws.main_menu = True
             ws.command_page = False

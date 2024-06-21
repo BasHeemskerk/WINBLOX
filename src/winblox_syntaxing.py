@@ -1,145 +1,30 @@
-prefix = [
-    "interface", 
-    "put",
-    "local",
-    "global"
-]
+from src import winblox_local_modules as wlm
+from src import winblox_debug_system as wds
+from src import winblox_file_manager as wfm
 
-delimiters = [
-    "(",
-    ")",
-    "[",
-    "]",
-    "{",
-    "}",
-    ":",
-    ";",
-    "$",
-    "/"
-]
+json_path = "./json/"
+extension = ".json"
 
-data_types = [
-    "num",
-    "bool",
-    "str",
-    "ip",
-    "ip-prefix",
-    "ip6",
-    "ip6-prefix",
-    "id",
-    "time",
-    "nil"
-]
+prefix_list = wfm.open_file(json_path, "prefix_list", extension)
+data_types_list = wfm.open_file(json_path, "data_types_list", extension)
+operators_list = wfm.open_file(json_path, "operators_list", extension)
+esc_seq_list = wfm.open_file(json_path, "esc_sequence_list", extension)
+delimiters_list = wfm.open_file(json_path, "delimiters_list", extension)
+comment_list = wfm.open_file(json_path, "comment_list", extension)
 
-esc_sequences = [
-    #"\"",
-    #"\\",
-    #"\n",
-    #"\r",
-    #"\t",
-    #"\$",
-    #"\?",
-    #"\_",
-    #"\a",
-    #"\b",
-    #"\f",
-    #"\v",
-    #"\xx"
-]
+def set_highligts(scr_input: str):
+    print(scr_input)
+    #x = wlm.re.search(r"" + keyword_list, scr_input)
+    #x = wlm.re.search("interfaceputlocalglobal()[]{}:;$/numboolstripip-prefixip6ip6-prefixidtimenil'\\\\n\r\t\\$\\?\\_\x07\x08\x0c\x0b'+*-/%=<><=>=!=!&&and||orin~|^&>><<.,[]()$~->#", keyword_list)
+    #for kl in range(len(keyword_list)):
+        #x = wlm.re.search(keyword_list[kl], scr_input)
+    #print(keyword_list)
+    #print (x)
 
-arithmetic_operators = [
-    "+",
-    "-",
-    "*",
-    "/",
-    "%"
-]
+#def split_string(scr_input):
+    #words_to_check = scr_input.split()
 
-relational_operators = [
-    "=",
-    "<",
-    ">",
-    "<=",
-    ">=",
-    "!="
-]
+    #for wtc in words_to_check:
+        #print (wtc)
+        #set_highligts(wtc)
 
-logical_operators = [
-    "!",
-    "&&",
-    "and",
-    "||",
-    "or",
-    "in"
-]
-
-bitwise_operators = [
-    "~",
-    "|",
-    "^",
-    "&",
-    ">>",
-    "<<"
-]
-
-concatenation_operators = [
-    ".",
-    ","
-]
-
-other_operators = [
-    "[]",
-    "()",
-    "$",
-    "~",
-    "->"
-]
-
-comments = [
-    "#"
-]
-
-c_prefix = "red"
-c_delimiters = "yellow"
-c_data_types = "red"
-c_esc_sequence = "orange"
-c_operators = "lightblue"
-c_arithmetic_operators = "lightblue"
-c_relational_operators = "lightblue"
-c_logical_operators = "lightblue"
-c_bitwise_operators = "lightblue"
-c_concatenation_operators = "lightblue"
-c_other_operators = "lightblue"
-c_comments = "green"
-c_variables = "green"
-
-
-def set_highligts(scr_input):
-
-    new_color = "black"
-
-    for letter in scr_input:
-        if letter in delimiters:
-            new_color = c_delimiters
-        if letter in data_types:
-            new_color = c_data_types
-        if letter in esc_sequences:
-            new_color = c_esc_sequence
-        if letter in arithmetic_operators or relational_operators or logical_operators or bitwise_operators or concatenation_operators or other_operators:
-            new_color = c_operators
-    for words in scr_input:
-        if words in prefix:
-            new_color = c_prefix
-        if words in c_variables:
-            new_color = c_variables
-    
-    print(new_color)
-
-    return new_color
-
-def split_string(scr_input):
-    words_to_check = scr_input.split()
-
-    for wtc in words_to_check:
-        print (wtc)
-        set_highligts(wtc)

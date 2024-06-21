@@ -1,0 +1,45 @@
+{
+  "arithmetic_operators":[
+    "+",
+    "*",
+    "-",
+    "/",
+    "%"
+  ],
+  "relational_operators" : [
+    "=",
+    "<",
+    ">",
+    "<=",
+    ">=",
+    "!="
+  ],
+  "logical_operators": [
+    "!",
+    "&&",
+    "and",
+    "||",
+    "or",
+    "in"
+  ],
+  "bitwise_operators": [
+    "~",
+    "|",
+    "^",
+    "&",
+    ">>",
+    "<<"
+  ],
+  "concatenation_operators" : [
+    ".",
+    ","
+  ],
+  "other_operators" : [
+    "[]",
+    "()",
+    "$",
+    "~",
+    "->"
+  ],
+  "color" : "lightblue"
+}

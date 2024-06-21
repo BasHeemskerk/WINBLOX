@@ -1,0 +1,9 @@
+{
+  "prefix" : [
+    "interface",
+    "local",
+    "global",
+    "put"
+  ],
+  "color": "red"
+}
